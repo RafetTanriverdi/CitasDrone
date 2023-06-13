@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*toggle-icon*/
+.bi-list {
+    color: white;
+}
+
+/*navbar*/
+#navbar {
+    background: rgba(0, 0, 0, 0.495);
+    height: 65px;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+
+}
+
+.navbar-nav li.nav-item a.nav-link {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        width: 100%;
+
+    }
+
+
+    .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 0px 10px 10px 10px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .dropdown-menu {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: none !important;
+    }
+}
+
+/* slide-video*/
+.slide-container {
+    background: rgba(0, 0, 0, 0.429);
+}
+
+.video-slider {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.video-slider>video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+.slide-body {
+    text-align: center;
+}
+
+.slide-body>p {
+    letter-spacing: 0.4rem;
+    font-size: 4rem;
+}
+
+/*section-1 home*/
+.section-1 {
+    background-color: #eee;
+}
+
+.section-one-main .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 0;
+}
+
+.section-one-main img {
+    width: 290px;
+    height: 290px;
+    border: 5px solid;
+    border-radius: 150px;
+    border-color: green;
+}
+
+.item-center {
+    margin-top: 90px;
+}
+
+
+/*section-2 info*/
+.section-two-main {
+    background-color: #212121;
+    display: flex;
+}
+
+
+.section-two-main .txt-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-two-main button {
+    width: 30%;
+}
+
+/*section-3 card main*/
+.section-three-main {
+    position: relative;
+    width: 100%;
+
+}
+
+.imgBorder {
+    width: 100%;
+    height: 0;
+    padding-top: 30%;
+    /* 1:2 aspect ratio */
+    position: relative;
+    overflow: hidden;
+
+}
+
+.imgBorder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.socail-media {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.socail-media i {
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+
+.card-main {
+    position: absolute !important;
+    right: 10%;
+    top: 0;
+    max-width: 30% !important;
+    background-color: green !important;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section-5*/
+
+.section-five-main .form-main {
+    height: 600px;
+    width: 350px;
+}
+
+.section-five-main .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-five-main .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contact-form-main {
+    display: flex;
+}
+
+/*footer*/
+
+.footer-main {
+    background-color: #14261C;
+    padding: 35px 0;
+
+}
+
+.main-footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around !important;
+
+}
+
+.footer-main .footer-pages a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/*copyright*/
+.copyright {
+    width: 100%;
+}
+
+.copyright a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+/*About Page*/
+/*Page Slider*/
+.page-container {
+    background-color: #212121e9;
+    height: 60vh;
+}
+
+.page-name {
+    font-size: 95px;
+    letter-spacing: 2px;
+    margin-bottom: 195px;
+    font-weight: 500;
+}
+
+/*paralax*/
+.parallax {
+    background-image: url('https://picsum.photos/1920/1080');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.parallax-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+
+}
+
+.card-paralax {
+    background-color: white;
+    width: 30%;
+    margin: 25px 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.parallax-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: black;
+
+}
+
+.parallax-text {
+    font-size: 1.2rem;
+    color: black;
+}
+
+/*team card*/
+.team-card {
+    padding: 15px 0;
+}
+
+.team-card img {
+    border-radius: 15px;
+}
+
+.team-text-card {
+    border-radius: 15px;
+}
+
+.mini-team-card .card,
+.mini-team-card img {
+    border-radius: 15px;
+}
+
+.mini-team-card img {
+    padding: 8px;
+}
+
+/* contact*/
+
+/*faq*/
+.accordion-button {
+    background-color: rgba(128, 128, 128, 0.057) !important;
+}
+
+/*blog*/
+
+/*blog card*/
+
+.blog-card {
+    position: relative;
+    border-radius: 15px;
+    width: 30% !important;
+    margin: 25px 15px;
+}
+
+
+.transparansty {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.436);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.blog-card h1,
+.blog-card p {
+    z-index: 2;
+    color: black;
+
+}
+
+.transparansty .btn {
+    width: 35%;
+}
+
+.transparansty .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/*sales page*/
+.product-section-main {
+    padding: 15px;
+}
+
+
+/*element*/
+
+.element {
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+
+}
+
+/* multilevel navigation */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+/* to show the arrow */

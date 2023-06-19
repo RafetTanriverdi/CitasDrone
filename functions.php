@@ -7,7 +7,7 @@ function citas_scripts() {
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js', array('jquery'), '5.3.0', true);
-    wp_enqueue_script('cts-js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('cts-js', get_template_directory_uri() . '/js/script.js', array('jquery'), rand(111, 9999), true);
     wp_enqueue_script('multilevel-dropdown', get_template_directory_uri() . '/js/multilevel-dropdown.js', array('jquery'), '1.0', true);
 
 }
@@ -35,5 +35,47 @@ function my_theme_register_menus() {
     );
 }
 add_action('init', 'my_theme_register_menus');
+
+function theme_custom_logo() {
+    add_theme_support('custom-logo', array(
+        'height'      => 50,
+        'width'       => 50,
+        'flex-width'  => true,
+        'flex-height' => true,
+    ));
+}
+add_action('after_setup_theme', 'theme_custom_logo');
+
+function my_custom_fields() {
+    if( function_exists('acf_add_local_field_group') ):
+
+        acf_add_local_field_group(array(
+            'key' => 'group_1',
+            'title' => 'My Custom Fields',
+            'fields' => array(
+                array(
+                    'key' => 'field_1',
+                    'label' => 'Example Field',
+                    'name' => 'example_field',
+                    'type' => 'text',
+                ),
+                // Diğer alanlar buraya eklenebilir.
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'post',
+                    ),
+                ),
+            ),
+        ));
+
+    endif;
+}
+
+add_action('acf/init', 'my_custom_fields');
+
 
 ?>

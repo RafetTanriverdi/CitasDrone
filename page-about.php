@@ -55,23 +55,14 @@ get_header(); ?>
         </div>
     </div>
     <!--Section 2 parallax-->
-    <div class="parallax">
-        <div class="parallax-inner">
-            <div class="card-paralax">
-                <h1 class="parallax-heading">Lorem ipsum dolor sit.</h1>
-                <p class="parallax-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem debitis consequatur
-                    delectus accusantium placeat aliquid beatae quasi itaque nulla ut, aut natus nihil sed vel quidem
-                    aliquam! Excepturi earum autem temporibus dolor molestias eveniet delectus ipsam dolore, accusamus
-                    veniam rerum natus? Qui eum consectetur sint rerum blanditiis id similique, cupiditate doloremque
-                    modi possimus nesciunt totam praesentium atque aperiam ab nihil. Explicabo quibusdam natus odio
-                    aliquam debitis illum non
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, est sit
-                    amet
-                    ornare fringilla, nisl risus auctor lectus, sit amet placerat quam orci a metus.</p>
-            </div>
-        </div>
+    <div class="parallax container-fluid">
+  <div class="parallax-inner row">
+    <div class="card-parallax  offset-md-2 col-lg-6 offset-lg-3 bg-white">
+      <h1 class="parallax-heading">Lorem ipsum dolor sit.</h1>
+      <p class="parallax-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem debitis consequatur delectus accusantium placeat aliquid beatae quasi itaque nulla ut, aut natus nihil sed vel quidem aliquam! Excepturi earum autem temporibus dolor molestias eveniet delectus ipsam dolore, accusamus veniam rerum natus? Qui eum consectetur sint rerum blanditiis id similique, cupiditate doloremque modi possimus nesciunt totam praesentium atque aperiam ab nihil. Explicabo quibusdam natus odio aliquam debitis illum non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, est sit amet ornare fringilla, nisl risus auctor lectus, sit amet placerat quam orci a metus.</p>
     </div>
+  </div>
+</div>
 
     <!--section-team  -->
     <div class="container-fluid bg-light">

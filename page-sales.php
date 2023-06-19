@@ -374,37 +374,42 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div class="col-md-8 contact-form-main">
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1096.5863410927373!2d34.611942174118596!3d37.93677196113557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1529ddcca810eef3%3A0x814e5d99c1aad031!2sNi%C4%9Fde%20Teknopark!5e0!3m2!1sen!2str!4v1683649258442!5m2!1sen!2str"
-                        width="420" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class=" col-md-4 me-0 pe-0">
+                <iframe
+                    class='map'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1096.5863410927373!2d34.611942174118596!3d37.93677196113557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1529ddcca810eef3%3A0x814e5d99c1aad031!2sNi%C4%9Fde%20Teknopark!5e0!3m2!1sen!2str!4v1683649258442!5m2!1sen!2str"
+                    width="420" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-                <div class="bg-dark align-center form-main p-5">
-                    <h2 class="text-white">Send a message</h2>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Name Surname">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+            <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0">
+                <div class="p-5" >    
+                    <div>
+
+                        <h2 class="text-white">Send a message</h2>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name Surname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                        placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label text-white">Example
                             textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <Button class="btn btn-success">
-                            Submit
-                        </Button>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <Button class="btn btn-success">
+                                Submit
+                            </Button>
+                        </div>
                     </div>
                 </div>
+                
+            </div>
 
             </div>
         </div>

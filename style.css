@@ -4,37 +4,65 @@
 
 }
 
-/*toggle-icon*/
-.bi-list {
-    color: white;
+
+
+/*logo*/
+.logo-img {
+    margin: 5px 0;
+    max-width: 100px; 
+    height: auto;
+    align-self: flex-end; 
 }
+
 
 /*navbar*/
 #navbar {
     background: rgba(0, 0, 0, 0.495);
-    height: 65px;
+   
 }
-
-.navbar {
-
+.navbar-brand {
     display: flex;
     align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 !important;
+    height: 65px;
 
 }
+.nav-cont{
 
-.navbar-nav li.nav-item a.nav-link {
-    color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+}
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        position: relative;
+.navbar-collapse .navbar-nav .nav-link  {
+    color: white !important;
+}
+.navbar-collapse .dropdown-menu {
+    background-color: #212121;
+
+}
+.navbar-collapse .dropdown-menu .dropdown-item {
+    color: white !important;
+}
+.navbar-collapse .dropdown-menu .dropdown-item:focus,
+.navbar-collapse .dropdown-menu .dropdown-item:hover {
+    color: black !important;
+}
+@media (max-width: 992px) {
+    .navbar{
         width: 100%;
-
     }
 
-
+   
     .navbar-collapse {
         position: absolute;
         width: 100%;
@@ -42,18 +70,25 @@
         left: 0;
         right: 0;
         padding: 0px 10px 10px 10px;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.8);
     }
 
     .dropdown-menu {
-        background: rgba(0, 0, 0, 0.6) !important;
+        background: rgba(0, 0, 0, 0.5) !important;
     }
 
     .navbar-light .navbar-toggler {
         border: none !important;
     }
+    .map{
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
 }
 
+/*Home*/
 /* slide-video*/
 .slide-container {
     background: rgba(0, 0, 0, 0.429);
@@ -91,6 +126,7 @@
 }
 
 /*section-1 home*/
+
 .section-1 {
     background-color: #eee;
 }
@@ -102,12 +138,13 @@
     margin: 90px 0;
 }
 
-.section-one-main img {
+.section-one-main video {
     width: 290px;
     height: 290px;
     border: 5px solid;
     border-radius: 150px;
     border-color: green;
+    object-fit: cover; 
 }
 
 .item-center {
@@ -196,11 +233,6 @@
     width: 350px;
 }
 
-.section-five-main .map {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .section-five-main .col-md-4 {
     display: flex;
@@ -208,6 +240,7 @@
     justify-content: center;
 
 }
+
 
 .contact-form-main {
     display: flex;
@@ -297,6 +330,17 @@
 .parallax-text {
     font-size: 1.2rem;
     color: black;
+}
+@media (max-width: 992px) {
+    .page-name {
+        font-size: 55px;
+    }
+    .parallax-heading {
+        font-size: 1.2rem;
+    }
+    .parallax-text {
+        font-size: 1rem;
+    }
 }
 
 /*team card*/

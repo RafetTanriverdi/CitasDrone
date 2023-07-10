@@ -6,7 +6,7 @@ get_header(); ?>
  <div class="page-container">
         <div class="video-slider ">
             <video src="DJI.mp4" autoplay muted loop></video>
-            <p class="text-white  page-name">Hakkımızda</p>
+            <p class="text-white  page-name"><?php echo get_the_title();?></p>
         </div>
     </div>
 

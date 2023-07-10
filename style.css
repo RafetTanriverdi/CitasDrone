@@ -9,21 +9,23 @@
 /*logo*/
 .logo-img {
     margin: 5px 0;
-    max-width: 100px; 
+    max-width: 100px;
     height: auto;
-    align-self: flex-end; 
+    align-self: flex-end;
 }
 
 
 /*navbar*/
 #navbar {
     background: rgba(0, 0, 0, 0.495);
-   
+
 }
+
 .navbar-brand {
     display: flex;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -32,41 +34,47 @@
     height: 65px;
 
 }
-.nav-cont{
 
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    
+.nav-cont {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
 .navbar-toggler-icon {
     filter: brightness(0) invert(1);
 }
 
-.navbar-collapse .navbar-nav .nav-link  {
+.navbar-collapse .navbar-nav .nav-link {
     color: white !important;
 }
+
 .navbar-collapse .dropdown-menu {
     background-color: #212121;
 
 }
+
 .navbar-collapse .dropdown-menu .dropdown-item {
     color: white !important;
 }
+
 .navbar-collapse .dropdown-menu .dropdown-item:focus,
 .navbar-collapse .dropdown-menu .dropdown-item:hover {
     color: black !important;
 }
+
 @media (max-width: 992px) {
-    .navbar{
+    .navbar {
         width: 100%;
     }
 
-   
+
     .navbar-collapse {
         position: absolute;
         width: 100%;
-        top: 100%;
+        top: 87%;
         left: 0;
         right: 0;
         padding: 0px 10px 10px 10px;
@@ -80,7 +88,8 @@
     .navbar-light .navbar-toggler {
         border: none !important;
     }
-    .map{
+
+    .map {
         width: 100%;
         padding: 5px;
         margin: 0 auto;
@@ -138,17 +147,30 @@
     margin: 90px 0;
 }
 
+.section-one-main .middle {
+    margin-top: 150px !important;
+}
+
 .section-one-main video {
     width: 290px;
     height: 290px;
     border: 5px solid;
     border-radius: 150px;
     border-color: green;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .item-center {
     margin-top: 90px;
+}
+
+@media screen and (max-width:768px) {
+
+    .section-one-main .col-md-4,
+    .middle {
+        margin: 0 auto !important;
+    }
+
 }
 
 
@@ -173,14 +195,13 @@
 .section-three-main {
     position: relative;
     width: 100%;
-
+    min-height: 240px;
 }
 
 .imgBorder {
     width: 100%;
     height: 0;
     padding-top: 30%;
-    /* 1:2 aspect ratio */
     position: relative;
     overflow: hidden;
 
@@ -188,13 +209,59 @@
 
 .imgBorder img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:768px) {
+    .imgBorder {
+        height: 450px;
+
+    }
+
+    .imgBorder img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        width: auto;
+        transform: translate(-50%, -50%);
+        min-height: 450px;
+        object-fit: cover;
+    }
+
+
+    .socail-media i {
+        font-size: 1.4rem;
+        margin-right: 0.6rem;
+        color: white;
+    }
+
+
+    .card-main {
+        position: absolute !important;
+        right: 10%;
+        top: 0;
+        max-width: 20%;
+        background-color: green;
+    }
+
+
+
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
+
 
 
 .socail-media {
@@ -214,9 +281,11 @@
     position: absolute !important;
     right: 10%;
     top: 0;
-    max-width: 30% !important;
-    background-color: green !important;
+    max-width: 30%;
+    background-color: green;
 }
+
+
 
 .card-body {
     width: 100%;
@@ -226,11 +295,32 @@
     align-items: center;
 }
 
+/*section- saying*/
+@media screen and (max-width: 768px) {
+    .mobile-card-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Burada kutular arasındaki boşluğu ayarlayabilirsiniz. */
+    }
+  
+    .mobile-card-column .col-md-4 {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  
+    .mobile-card-column .card {
+      width: 80%; /* Kartın genişliğini ayarlar. */
+      margin: 0 auto; /* Kartı ortalar. */
+    }
+  }
+  
 /* section-5*/
 
 .section-five-main .form-main {
     height: 600px;
     width: 350px;
+    
 }
 
 
@@ -245,7 +335,32 @@
 .contact-form-main {
     display: flex;
 }
-
+@media screen and (max-width: 768px) {
+    .map-container iframe {
+      width: 100%; /* Harita genişliği %100 olacak. */
+      border: none;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+    }
+    .map-container, .form-container {
+      width: 100%; /* Elementlerin genişliği %100 olacak. */
+      text-align: center; /* İçerikler ortalanacak. */
+      margin-bottom: 20px; /* Elementler arası boşluk ayarlanacak. */
+    }
+  
+    .form-container .form-main {
+      width: 90%; /* Form genişliği %90 olacak. */
+      height: auto; /* Form yüksekliği içeriğe göre ayarlanacak. */
+      margin: 0 auto; /* Form ortalanacak. */
+      display: flex; /* Form için flex özellikleri kullanılacak. */
+      flex-direction: column; /* Form elemanları dikey eksende sıralanacak. */
+      justify-content: center; /* Form elemanları dikey eksende ortalancak. */
+      align-items: center; /* Form elemanları yatay eksende ortalancak. */
+    }
+  }
+  
+  
 /*footer*/
 
 .footer-main {
@@ -331,13 +446,16 @@
     font-size: 1.2rem;
     color: black;
 }
+
 @media (max-width: 992px) {
     .page-name {
         font-size: 55px;
     }
+
     .parallax-heading {
         font-size: 1.2rem;
     }
+
     .parallax-text {
         font-size: 1rem;
     }
@@ -416,6 +534,14 @@
 /*sales page*/
 .product-section-main {
     padding: 15px;
+}
+
+.image-container {
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+
 }
 
 

@@ -56,31 +56,30 @@ get_header(); ?>
     </div>
 
    <!--contact-section-->
-   <div class="container-fluid" style="background-color: white;">
+   <div class="container section-five-main my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2><?php echo get_field("contact-left-title")?></h2>
 
-    <div class="container section-five-main py-5 ">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Lorem, ipsum dolor.</h2>
+            <h4><?php echo get_field("contact-left-subtitle-1")?></h4>
+            <p><?php echo get_field("contact-left-text-1")?></p>
 
-                <h4>Lorem, ipsum.</h4>
-                <p>Lorem ipsum dolor sit.</p>
+            <h4><?php echo get_field("contact-left-subtitle-2")?></h4>
+            <p><?php echo get_field("contact-left-text-2")?></p>
 
-                <h4>Lorem, ipsum.</h4>
-                <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.</p>
-
-                <h4>lorem</h4>
-                <div class="icon">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-youtube"></i>
-                    <i class="bi bi-whatsapp"></i>
-                </div>
+            <h4><?php echo get_field("contact-left-socialmedia-title")?></h4>
+            <div class="icon">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-whatsapp"></i>
             </div>
+        </div>
 
+     
             <div class=" col-md-4 me-0 pe-0">
                 <iframe
                     class='map'
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1096.5863410927373!2d34.611942174118596!3d37.93677196113557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1529ddcca810eef3%3A0x814e5d99c1aad031!2sNi%C4%9Fde%20Teknopark!5e0!3m2!1sen!2str!4v1683649258442!5m2!1sen!2str"
+                    src="<?php echo get_field("company-localtion-url")?>"
                     width="420" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -89,33 +88,33 @@ get_header(); ?>
                 <div class="p-5" >    
                     <div>
 
-                        <h2 class="text-white">Send a message</h2>
+                        <h2 class="text-white"><?php echo get_field("contact-form-title")?></h2>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name Surname">
+                            <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-name-username")?></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" >
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+                            <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-email")?></label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                       >
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label text-white">Example
-                            textarea</label>
+                        <label for="exampleFormControlTextarea1" class="form-label text-white"><?php echo get_field("contact-form-massage")?></label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="mb-3">
                             <Button class="btn btn-success">
-                                Submit
+                            <?php echo get_field("contact-form-submit-button")?>
                             </Button>
                         </div>
                     </div>
                 </div>
                 
             </div>
-        </div>
     </div>
 </div>
+
+
   
   
     <!--section-3-social-media-->

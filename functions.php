@@ -78,4 +78,19 @@ function my_custom_fields() {
 add_action('acf/init', 'my_custom_fields');
 
 
+function create_product_type() {
+    register_post_type('Drones',
+        array(
+            'labels'      => array(
+                'name'          => __('Drones', 'textdomain'),
+                'singular_name' => __('Drone', 'textdomain'),
+            ),
+                'public'      => true,
+                'has_archive' => true,
+        )
+    );
+}
+add_action('init', 'create_product_type');
+
+
 ?>

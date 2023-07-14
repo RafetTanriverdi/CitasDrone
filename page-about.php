@@ -5,7 +5,11 @@ get_header(); ?>
  <!--Page-Slider-->
  <div class="page-container">
         <div class="video-slider ">
-            <video src="DJI.mp4" autoplay muted loop></video>
+        <?php
+    $file = get_field('slider-video');
+    if ($file) {
+    echo '<video src="' . $file['url'] . '" autoplay muted loop></video>';
+    }       ?>
             <p class="text-white  page-name"><?php echo get_the_title();?></p>
         </div>
     </div>
@@ -17,49 +21,36 @@ get_header(); ?>
             <div class="container">
 
                 <div class="row ">
-                    <h2 class="pt-5">Lorem ipsum dolor sit.</h2>
-                    <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas repudiandae quae, mollitia
-                        odit
-                        accusantium excepturi neque ex? Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2 class="pt-5"><?php echo get_field("about-main-title")?></h2>
+                    <h5><?php echo get_field("about-main-subtitle")?></h5>
+                    <p><?php echo get_field("about-main-text")?></p>
                 </div>
                 <div class="row p-5 " style="height: 100%;">
                     <div class="col-md-6">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse nihil praesentium quas
-                            quam asperiores fugit maxime ratione doloremque veniam et ipsum id quos molestias aliquam
-                            ipsam tenetur laboriosam distinctio vitae repellendus, ut culpa? Nihil?</p>
+                        <h2><?php echo get_field("about-normal-title")?> </h2>
+                        <p><?php echo get_field("about-normal-text-1")?></p>
                         <ul>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dignissimos reiciendis
-                                illo consequuntur accusamus, ea ratione ad error perferendis sit ipsa aperiam illum quia
-                                rem, dicta exercitationem repudiandae omnis cumque voluptas vero? Sint modi, sunt
-                                nesciunt eos, quasi dicta nulla saepe consectetur eius facere error.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dignissimos reiciendis
-                                illo consequuntur accusamus, ea ratione ad error perferendis sit ipsa aperiam illum quia
-                                rem, dicta exercitationem repudiandae omnis cumque voluptas vero? Sint modi, sunt
-                                nesciunt eos, quasi dicta nulla saepe consectetur eius facere error.</li>
+                            <li><?php echo get_field("about-normal-list-1")?></li>
+                            <li><?php echo get_field("about-normal-list-2")?></li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt reiciendis ab numquam,
-                            nemo maiores expedita non iusto magni perferendis doloribus id deserunt enim quae
-                            architecto, dolor alias assumenda blanditiis quibusdam corporis. Voluptatum adipisci veniam
-                            sequi.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p><?php echo get_field("about-normal-text-2")?></p>
+                        <p><?php echo get_field("about-normal-text-3")?></p>
 
                     </div>
                     <div class="col-md-6 " style="height: 100%; display: flex; align-items: center;">
-                        <img src="https://agrispraydrones.com/wp-content/uploads/2022/08/moreland_family.jpg-2048x1463.jpg"
-                            class="card-img-top" alt="...">
+                        <img src="<?php echo get_field("about-normal-image")?>"
+                            class="card-img-top">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--Section 2 parallax-->
-    <div class="parallax container-fluid">
+    <div class="parallax container-fluid" style="background-image: url('<?php echo get_field("about-parallax-image")?>')">
   <div class="parallax-inner row">
     <div class="card-parallax  offset-md-2 col-lg-6 offset-lg-3 bg-white">
-      <h1 class="parallax-heading">Lorem ipsum dolor sit.</h1>
-      <p class="parallax-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem debitis consequatur delectus accusantium placeat aliquid beatae quasi itaque nulla ut, aut natus nihil sed vel quidem aliquam! Excepturi earum autem temporibus dolor molestias eveniet delectus ipsam dolore, accusamus veniam rerum natus? Qui eum consectetur sint rerum blanditiis id similique, cupiditate doloremque modi possimus nesciunt totam praesentium atque aperiam ab nihil. Explicabo quibusdam natus odio aliquam debitis illum non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, est sit amet ornare fringilla, nisl risus auctor lectus, sit amet placerat quam orci a metus.</p>
+      <h1 class="parallax-heading"> <?php echo get_field("about-parallax-title")?></h1>
+      <p class="parallax-text"><?php echo get_field("about-parallax-text")?></p>
     </div>
   </div>
 </div>
@@ -68,122 +59,64 @@ get_header(); ?>
     <div class="container-fluid bg-light">
         <div class="container py-3">
             <div class="row text-center">
-                <h2>Lorem ipsum dolor sit amet.</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et veritatis sed ab nobis.</p>
+                <h2><?php echo get_field("team-section-title")?></h1>
+                    <p><?php echo get_field("team-section-text")?></p>
             </div>
             <div class="row mb-4">
                 <div class="col-lg-4 team-card">
-                    <img src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0016_ASD-Headshots-9527_Moreland-jpg.webp"
+                    <img src="<?php echo get_field("team-section-teamlead-image")?>"
                         height="450px">
                 </div>
                 <div class="col-lg-8 d-flex flex-column justify-content-center border border-1 my-3 team-text-card ">
-                    <h3>Lorem, ipsum.</h3>
-                    <h5>Lorem.</h5>
+                    <h3><?php echo get_field("team-section-teamlead-name")?></h3>
+                    <h5><?php echo get_field("team-section-teamlead-position")?></h5>
                     <a href="#"><i class="bi bi-envelope"></i></a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis distinctio saepe doloribus,
-                        blanditiis vel sit dolorum! Inventore blanditiis cumque cupiditate tempore, maiores quibusdam
-                        suscipit fugit possimus nisi aliquam dolor magni ipsam saepe error porro magnam eum consequuntur
-                        ad vel, sunt molestiae voluptatibus perferendis rerum neque? Blanditiis, id. Delectus earum
-                        fugiat, mollitia error dolore expedita consequuntur ratione quod tenetur dolores. Dicta.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere id dolores eos eum?
-                        Exercitationem necessitatibus cum natus velit dolor enim iusto, laborum ipsa provident labore
-                        distinctio reprehenderit ea id vel suscipit aspernatur aperiam adipisci incidunt pariatur unde
-                        aliquam voluptates. Labore eius ratione deserunt voluptatibus, vitae pariatur numquam, aliquam,
-                        sed ea recusandae esse. Consectetur ullam cumque, dolor, temporibus quidem eius, magni nostrum
-                        natus odit distinctio enim officia assumenda rem dolore.
+                    <p><?php echo get_field("team-section-teamlead-composition")?>
                     </p>
-                    <p class="text-end"><b>-lorem</b></p>
+                    <p class="text-end"><b>- <?php echo get_field("team-section-teamlead-name")?></b></p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center ">
-                <div class="col-md-3 mini-team-card  mb-3">
-                    <div class="card" >
-                        <img src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card  mb-3">
-                    <div class="card" >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card mb-3">
-                    <div class="card " >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body  ">
-                            <p ><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card mb-3">
-                    <div class="card" >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card mb-3">
-                    <div class="card" >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card mb-3">
-                    <div class="card" >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card mb-3">
-                    <div class="card" >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mini-team-card mb-3">
-                    <div class="card" >
-                        <img class="" src="https://agrispraydrones.com/wp-content/uploads/2023/01/AgriSprayDrones_0017_ASD-Headshots-9519_Austin-jpg.webp"
-                            class="card-img-top" >
-                        <div class="card-body">
-                            <p><b>Lorem, ipsum.</b></p>
-                            <p>Lorem, ipsum.</p>
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                    </div>
-                </div>
+                
+<?php
+
+
+$counter = 0;
+
+$args = array(
+    'post_type' => 'TeamMembers',
+    'posts_per_page' => -1,
+    'orderby' => 'date',
+    'order' => 'ASC'
+);
+
+$query = new WP_Query($args);
+
+if ($query->have_posts()) :
+    while ($query->have_posts()) :
+        $query->the_post();
+       ?>
+        <div class="col-md-3 mini-team-card  mb-3">
+        <div class="card" >
+            <img src="<?php echo get_field("team-section-teammember-image")?>"
+                class="card-img-top" >
+            <div class="card-body">
+                <p><b><?php echo get_field("team-section-teammember-name")?></b></p>
+                <p><?php echo get_field("team-section-teammember-role")?></p>
+                <i class="bi bi-envelope"></i>
+            </div>
+        </div>
+    </div>
+      <?php  
+    endwhile;
+else :
+    echo 'No posts found';
+endif;
+
+wp_reset_postdata();
+
+?>
+              
             </div>
         </div>
         
@@ -194,23 +127,24 @@ get_header(); ?>
 
     <!--section-3-social-media-->
 
-    <div class="container-fluid section-three-main">
-        <div class="row">
-            <div class="imgBorder">
-                <img src="./mosaic_bg_agrispray.jpg">
-            </div>
-            <div class="card text-bg-success mb-3 card-main" style="max-width: 18rem;">
-                <div class="card-body">
-                    <div class="socail-media">
-                        <i class="bi bi-instagram"></i>
-                        <h1 class="card-title text-white">Follow Instagram</h1>
 
-                    </div>
-                    <p class="text-white">Lorem ipsum dolor sit amet.</p>
-                    <button class="btn btn-outline-light  justify-content-end"> Follow </button>
+    <div class="container-fluid section-three-main">
+    <div class="row">
+        <div class="imgBorder">
+            <img src="<?php echo get_field("followsectionfullimage")?>">
+        </div>
+        <div class="card  mb-3 card-main" style="max-width: 18rem;">
+            <div class="card-body">
+                <div class="socail-media">
+                    <i class="bi bi-instagram"></i>
+                    <h1 class="card-title text-white"><?php echo get_field("followcardtitle")?></h1>
                 </div>
+                <p class="text-white"><?php echo get_field("followcardtext")?></p>
+                <a class="btn btn-outline-light  justify-content-end" href="<?php echo get_field("followbuttontargetlink")?>"> <?php echo get_field("followbuttontext")?></a>
             </div>
         </div>
     </div>
+</div>
+
 
 <?php get_footer(); ?>

@@ -22,9 +22,7 @@ add_action('after_setup_theme', 'remove_admin_bar');
 
 require_once('class-wp-bootstrap-navwalker.php');
 
-// register_nav_menus(array(
-//     'primary' => __('Primary Menu', 'citas'),
-// ));
+
 
 
 function my_theme_register_menus() {
@@ -59,7 +57,7 @@ function my_custom_fields() {
                     'name' => 'example_field',
                     'type' => 'text',
                 ),
-                // Diğer alanlar buraya eklenebilir.
+                
             ),
             'location' => array(
                 array(
@@ -89,8 +87,29 @@ function create_product_type() {
                 'has_archive' => true,
         )
     );
+    register_post_type('TeamMembers',
+    array(
+        'labels'      => array(
+            'name'          => __('TeamMembers', 'textdomain'),
+            'singular_name' => __('member', 'textdomain'),
+        ),
+            'public'      => true,
+            'has_archive' => true,
+    )
+    );
+    register_post_type('Faqs',
+    array(
+        'labels'      => array(
+            'name'          => __('faqs', 'textdomain'),
+            'singular_name' => __('faq', 'textdomain'),
+        ),
+            'public'      => true,
+            'has_archive' => true,
+    )
+    );
 }
 add_action('init', 'create_product_type');
+
 
 
 ?>

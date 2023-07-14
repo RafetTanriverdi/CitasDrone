@@ -6,7 +6,7 @@ get_header(); ?>
 <div class="slide-container">
     <div class="video-slider">
     <?php
-    $file = get_field('homeslider-video');
+    $file = get_field('slider-video');
     if ($file) {
     echo '<video src="' . $file['url'] . '" autoplay muted loop></video>';
     }       ?>

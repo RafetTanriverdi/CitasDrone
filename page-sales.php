@@ -5,7 +5,11 @@ get_header(); ?>
 <!--Page-Slider-->
 <div class="page-container ">
     <div class="video-slider ">
-        <video src="DJI.mp4" autoplay muted loop></video>
+    <?php
+    $file = get_field('slider-video');
+    if ($file) {
+    echo '<video src="' . $file['url'] . '" autoplay muted loop></video>';
+    }       ?>
         <p class="text-white  page-name"><?php echo get_the_title(); ?></p>
     </div>
 </div>
@@ -34,7 +38,7 @@ if ($query->have_posts()) :
         if ($counter % 2 == 1) {
 
             ?>
-            <div class="container-fluid product-section-main">
+            <div class="container-fluid product-section-main ">
             <div class="picture-main container my-2">
                 <div class="row d-flex">
                     <div class="col-lg-8">

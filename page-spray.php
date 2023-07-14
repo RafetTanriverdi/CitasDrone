@@ -5,55 +5,46 @@ get_header(); ?>
     <!--Page-Slider-->
     <div class="page-container">
         <div class="video-slider ">
-            <video src="DJI.mp4" autoplay muted loop></video>
-            <p class="text-white  page-name">İlaçlama</p>
+        <?php
+    $file = get_field('slider-video');
+    if ($file) {
+    echo '<video src="' . $file['url'] . '" autoplay muted loop></video>';
+    }       ?>
+            <p class="text-white  page-name"><?php echo get_the_title();?></p>
         </div>
     </div>
 
     <!--about-section-1-->
     <div class="about-section-1">
 
-        <div class="container-fluid about-section-one-main bg-light">
-            <div class="container">
+<div class="container-fluid about-section-one-main bg-light">
+    <div class="container">
 
-                <div class="row ">
-                    <h2 class="pt-5">Lorem ipsum dolor sit.</h2>
-                    <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas repudiandae quae, mollitia
-                        odit
-                        accusantium excepturi neque ex? Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="row p-5 " style="height: 100%;">
-                    <div class="col-md-6">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse nihil praesentium quas
-                            quam asperiores fugit maxime ratione doloremque veniam et ipsum id quos molestias aliquam
-                            ipsam tenetur laboriosam distinctio vitae repellendus, ut culpa? Nihil?</p>
-                        <ul>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dignissimos reiciendis
-                                illo consequuntur accusamus, ea ratione ad error perferendis sit ipsa aperiam illum quia
-                                rem, dicta exercitationem repudiandae omnis cumque voluptas vero? Sint modi, sunt
-                                nesciunt eos, quasi dicta nulla saepe consectetur eius facere error.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dignissimos reiciendis
-                                illo consequuntur accusamus, ea ratione ad error perferendis sit ipsa aperiam illum quia
-                                rem, dicta exercitationem repudiandae omnis cumque voluptas vero? Sint modi, sunt
-                                nesciunt eos, quasi dicta nulla saepe consectetur eius facere error.</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt reiciendis ab numquam,
-                            nemo maiores expedita non iusto magni perferendis doloribus id deserunt enim quae
-                            architecto, dolor alias assumenda blanditiis quibusdam corporis. Voluptatum adipisci veniam
-                            sequi.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="row ">
+            <h2 class="pt-5"><?php echo get_field("about-main-title")?></h2>
+            <h5><?php echo get_field("about-main-subtitle")?></h5>
+            <p><?php echo get_field("about-main-text")?></p>
+        </div>
+        <div class="row p-5 " style="height: 100%;">
+            <div class="col-md-6">
+                <h2><?php echo get_field("about-normal-title")?> </h2>
+                <p><?php echo get_field("about-normal-text-1")?></p>
+                <ul>
+                    <li><?php echo get_field("about-normal-list-1")?></li>
+                    <li><?php echo get_field("about-normal-list-2")?></li>
+                </ul>
+                <p><?php echo get_field("about-normal-text-2")?></p>
+                <p><?php echo get_field("about-normal-text-3")?></p>
 
-                    </div>
-                    <div class="col-md-6 " style="height: 100%; display: flex; align-items: center;">
-                        <img src="https://agrispraydrones.com/wp-content/uploads/2022/08/moreland_family.jpg-2048x1463.jpg"
-                            class="card-img-top" alt="...">
-                    </div>
-                </div>
+            </div>
+            <div class="col-md-6 " style="height: 100%; display: flex; align-items: center;">
+                <img src="<?php echo get_field("about-normal-image")?>"
+                    class="card-img-top">
             </div>
         </div>
     </div>
+</div>
+</div>
 
    <!--contact-section-->
    <div class="container section-five-main my-5">
@@ -119,24 +110,25 @@ get_header(); ?>
   
     <!--section-3-social-media-->
 
-    <div class="container-fluid section-three-main">
-        <div class="row">
-            <div class="imgBorder">
-                <img src="./mosaic_bg_agrispray.jpg">
-            </div>
-            <div class="card text-bg-success mb-3 card-main" style="max-width: 18rem;">
-                <div class="card-body">
-                    <div class="socail-media">
-                        <i class="bi bi-instagram"></i>
-                        <h1 class="card-title text-white">Follow Instagram</h1>
-
-                    </div>
-                    <p class="text-white">Lorem ipsum dolor sit amet.</p>
-                    <button class="btn btn-outline-light  justify-content-end"> Follow </button>
+   
+<div class="container-fluid section-three-main">
+    <div class="row">
+        <div class="imgBorder">
+            <img src="<?php echo get_field("followsectionfullimage")?>">
+        </div>
+        <div class="card  mb-3 card-main" style="max-width: 18rem;">
+            <div class="card-body">
+                <div class="socail-media">
+                    <i class="bi bi-instagram"></i>
+                    <h1 class="card-title text-white"><?php echo get_field("followcardtitle")?></h1>
                 </div>
+                <p class="text-white"><?php echo get_field("followcardtext")?></p>
+                <a class="btn btn-outline-light  justify-content-end" href="<?php echo get_field("followbuttontargetlink")?>"> <?php echo get_field("followbuttontext")?></a>
             </div>
         </div>
     </div>
+</div>
+
 
 
 <?php get_footer(); ?>

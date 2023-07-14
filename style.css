@@ -298,31 +298,37 @@
 /*section- saying*/
 @media screen and (max-width: 768px) {
     .mobile-card-column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px; /* Burada kutular arasındaki boşluğu ayarlayabilirsiniz. */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
-  
+
     .mobile-card-column .col-md-4 {
-      max-width: 100%;
-      flex-basis: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
     }
-  
+
     .mobile-card-column .card {
-      width: 80%; /* Kartın genişliğini ayarlar. */
-      margin: 0 auto; /* Kartı ortalar. */
+        width: 80%;
+        margin: 0 auto;
     }
-  }
-  
+}
+
 /* section-5*/
 
 .section-five-main .form-main {
     height: 600px;
     width: 350px;
-    
+
+
 }
 
+.contact-main-one {
+    background-color: white!important;
+    margin: 0;
+    padding: 0;
+}
 
 .section-five-main .col-md-4 {
     display: flex;
@@ -335,32 +341,35 @@
 .contact-form-main {
     display: flex;
 }
+
 @media screen and (max-width: 768px) {
     .map-container iframe {
-      width: 100%; /* Harita genişliği %100 olacak. */
-      border: none;
-      padding: 0 !important;
-      margin: 0 !important;
-      width: 100% !important;
+        width: 100%;
+        border: none;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
     }
-    .map-container, .form-container {
-      width: 100%; /* Elementlerin genişliği %100 olacak. */
-      text-align: center; /* İçerikler ortalanacak. */
-      margin-bottom: 20px; /* Elementler arası boşluk ayarlanacak. */
+
+    .map-container,
+    .form-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
-  
+
     .form-container .form-main {
-      width: 90%; /* Form genişliği %90 olacak. */
-      height: auto; /* Form yüksekliği içeriğe göre ayarlanacak. */
-      margin: 0 auto; /* Form ortalanacak. */
-      display: flex; /* Form için flex özellikleri kullanılacak. */
-      flex-direction: column; /* Form elemanları dikey eksende sıralanacak. */
-      justify-content: center; /* Form elemanları dikey eksende ortalancak. */
-      align-items: center; /* Form elemanları yatay eksende ortalancak. */
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-  }
-  
-  
+}
+
+
 /*footer*/
 
 .footer-main {
@@ -381,6 +390,16 @@
     color: white;
     margin-bottom: 5px;
 }
+.footer-pages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-pages li {
+    margin-bottom: 10px;
+}
+
 
 /*copyright*/
 .copyright {
@@ -411,7 +430,6 @@
 
 /*paralax*/
 .parallax {
-    background-image: url('https://picsum.photos/1920/1080');
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -534,6 +552,8 @@
 /*sales page*/
 .product-section-main {
     padding: 15px;
+    background-color: white !important;
+    position: relative;
 }
 
 .image-container {

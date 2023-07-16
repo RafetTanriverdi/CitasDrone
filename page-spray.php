@@ -22,12 +22,12 @@ get_header(); ?>
 
         <div class="row ">
             <h2 class="pt-5"><?php echo get_field("about-main-title")?></h2>
-            <h5><?php echo get_field("about-main-subtitle")?></h5>
+            <p><?php echo get_field("about-main-subtitle")?></p>
             <p><?php echo get_field("about-main-text")?></p>
         </div>
         <div class="row p-5 " style="height: 100%;">
             <div class="col-md-6">
-                <h2><?php echo get_field("about-normal-title")?> </h2>
+                <p><?php echo get_field("about-normal-title")?> </p>
                 <p><?php echo get_field("about-normal-text-1")?></p>
                 <ul>
                     <li><?php echo get_field("about-normal-list-1")?></li>

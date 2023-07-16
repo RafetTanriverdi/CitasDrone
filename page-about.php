@@ -22,12 +22,12 @@ get_header(); ?>
 
                 <div class="row ">
                     <h2 class="pt-5"><?php echo get_field("about-main-title")?></h2>
-                    <h5><?php echo get_field("about-main-subtitle")?></h5>
+                    <p><?php echo get_field("about-main-subtitle")?></p>
                     <p><?php echo get_field("about-main-text")?></p>
                 </div>
                 <div class="row p-5 " style="height: 100%;">
                     <div class="col-md-6">
-                        <h2><?php echo get_field("about-normal-title")?> </h2>
+                        <p><?php echo get_field("about-normal-title")?> </p>
                         <p><?php echo get_field("about-normal-text-1")?></p>
                         <ul>
                             <li><?php echo get_field("about-normal-list-1")?></li>
@@ -48,8 +48,8 @@ get_header(); ?>
     <!--Section 2 parallax-->
     <div class="parallax container-fluid" style="background-image: url('<?php echo get_field("about-parallax-image")?>')">
   <div class="parallax-inner row">
-    <div class="card-parallax  offset-md-2 col-lg-6 offset-lg-3 bg-white">
-      <h1 class="parallax-heading"> <?php echo get_field("about-parallax-title")?></h1>
+    <div class="card-parallax  offset-md-2 col-lg-6 offset-lg-3 bg-white rounded-3 p*2">
+      <h1 class="parallax-heading pt-3"> <?php echo get_field("about-parallax-title")?></h1>
       <p class="parallax-text"><?php echo get_field("about-parallax-text")?></p>
     </div>
   </div>
@@ -59,7 +59,7 @@ get_header(); ?>
     <div class="container-fluid bg-light">
         <div class="container py-3">
             <div class="row text-center">
-                <h2><?php echo get_field("team-section-title")?></h1>
+                <h1><?php echo get_field("team-section-title")?></h1>
                     <p><?php echo get_field("team-section-text")?></p>
             </div>
             <div class="row mb-4">
@@ -67,7 +67,7 @@ get_header(); ?>
                     <img src="<?php echo get_field("team-section-teamlead-image")?>"
                         height="450px">
                 </div>
-                <div class="col-lg-8 d-flex flex-column justify-content-center border border-1 my-3 team-text-card ">
+                <div class="col-lg-8 d-flex flex-column justify-content-center border border-1 my-3 py-3 team-text-card ">
                     <h3><?php echo get_field("team-section-teamlead-name")?></h3>
                     <h5><?php echo get_field("team-section-teamlead-position")?></h5>
                     <a href="#"><i class="bi bi-envelope"></i></a>

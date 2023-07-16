@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Home Page */
+/*Template Name: index Page */
 get_header(); ?>
 
 <!--Slider-->

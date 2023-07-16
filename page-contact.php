@@ -106,7 +106,7 @@ get_header(); ?>
                                         <?php echo get_field("ask"); ?>
                                     </button>
                                 </h2>
-                                <div id="collapse<?php echo $counter; ?>" class="accordion-collapse collapse show" aria-labelledby="heading<?php echo $counter; ?>"
+                                <div id="collapse<?php echo $counter; ?>" class="accordion-collapse collapse " aria-labelledby="heading<?php echo $counter; ?>"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p><?php echo get_field("question"); ?></p>

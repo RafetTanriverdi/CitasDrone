@@ -52,11 +52,11 @@ get_header(); ?>
             <h4><?php echo get_field("home-sc2-left-title-3")?></h4>
             <a class="btn btn-outline-success" href='<?php echo get_field("home-sc2-button-page")?>'><?php echo get_field("home-sc2-button-text")?></a>
         </div>
-        <div class="col-md-6 m-5 text-white">
-            <h3><?php echo get_field("home-sc2-right-title-1")?></h3>
+        <div class="col-md-6 m-5 text-white ">
+            <h2><?php echo get_field("home-sc2-right-title-1")?></h2>
             <p><?php echo get_field("home-sc2-right-text-1")?></p>
 
-            <h3><?php echo get_field("home-sc2-right-title-2")?></h3>
+            <h2><?php echo get_field("home-sc2-right-title-2")?></h2>
             <p><?php echo get_field("home-sc2-right-text-2")?></p>
 
         </div>
@@ -95,29 +95,27 @@ get_header(); ?>
         <div class="row justify-content-between mobile-card-column ">
 
             <div class="col-md-4   ">
-                <div class="card bg-light" style="width: 20rem;">
+                <div class="card bg-light" style="width: 20rem; ">
                     <div class="card-body">
                         <p class="card-text"><?php echo get_field("company-goals-card-text-1")?></p>
-                        <a href="<?php echo get_field("company-goals-card-link-1")?>" class="card-link"><?php echo get_field("company-goals-card-link-text-1")?></a>
-                        <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo get_field("company-goals-card-subtitle-1")?></h6>
+                            <h6 class="card-subtitle mb-2 text-success"><?php echo get_field("company-goals-card-subtitle-1")?></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-4   ">
-                <div class="card bg-light" style="width: 20rem;">
+                <div class="card bg-light" style="width: 20rem; " >
                     <div class="card-body">
                         <p class="card-text"><?php echo get_field("company-goals-card-text-2")?></p>
-                        <a href="<?php echo get_field("company-goals-card-link-2")?>" class="card-link"><?php echo get_field("company-goals-card-link-text-2")?></a>
-                        <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo get_field("company-goals-card-subtitle-2")?></h6>
+                            <h6 class="card-subtitle mb-2 text-success"><?php echo get_field("company-goals-card-subtitle-2")?></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-4   ">
-                <div class="card bg-light" style="width: 20rem;">
+                <div class="card bg-light" style="width: 20rem; ">
                     <div class="card-body">
                         <p class="card-text"><?php echo get_field("company-goals-card-text-3")?></p>
-                        <a href="<?php echo get_field("company-goals-card-link-3")?>" class="card-link"><?php echo get_field("company-goals-card-link-text-3")?></a>
-                        <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo get_field("company-goals-card-subtitle-3")?></h6>
+                        <h6 class="card-subtitle mb-2  text-success"><?php echo get_field("company-goals-card-subtitle-3")?></h6>
+
                     </div>
                 </div>
             </div>

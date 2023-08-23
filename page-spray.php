@@ -66,8 +66,7 @@ get_header(); ?>
             </div>
         </div>
 
-     
-            <div class=" col-md-4 me-0 pe-0">
+        <div class=" col-md-4 me-0 pe-0  map-container">
                 <iframe
                     class='map'
                     src="<?php echo get_field("company-localtion-url")?>"
@@ -75,7 +74,7 @@ get_header(); ?>
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0">
+            <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0 form-container ">
                 <div class="p-5" >    
                     <div>
 

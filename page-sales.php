@@ -314,37 +314,41 @@ wp_reset_postdata();
             </div>
         </div>
 
-
-        <div class=" col-md-4 me-0 pe-0">
-            <iframe class='map' src="<?php echo get_field("company-localtion-url") ?>" width="420" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0">
-            <div class="p-5">
-                <div>
-
-                    <h2 class="text-white"><?php echo get_field("contact-form-title") ?></h2>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-name-username") ?></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-email") ?></label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label text-white"><?php echo get_field("contact-form-massage") ?></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <Button class="btn btn-success">
-                            <?php echo get_field("contact-form-submit-button") ?>
-                        </Button>
-                    </div>
-                </div>
+        <div class=" col-md-4 me-0 pe-0  map-container">
+                <iframe
+                    class='map'
+                    src="<?php echo get_field("company-localtion-url")?>"
+                    width="420" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-        </div>
+            <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0 form-container ">
+                <div class="p-5" >    
+                    <div>
+
+                        <h2 class="text-white"><?php echo get_field("contact-form-title")?></h2>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-name-username")?></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-email")?></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                       >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-white"><?php echo get_field("contact-form-massage")?></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <Button class="btn btn-success">
+                            <?php echo get_field("contact-form-submit-button")?>
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
     </div>
 </div>
 

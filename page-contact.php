@@ -15,9 +15,10 @@ get_header(); ?>
     </div>
 
     <!--contact-section-->
-    <div class='contact-main-one'>
+    
+    <div class='contact-main-one container-fluid'>
         
-<div class="container section-five-main my-5">
+    <div class="container section-five-main my-5">
     <div class="row">
         <div class="col-md-4">
             <h2><?php echo get_field("contact-left-title")?></h2>
@@ -73,7 +74,7 @@ get_header(); ?>
                 
             </div>
     </div>
-</div>
+    </div>
 
 </div>
 <!--faq -->

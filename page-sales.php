@@ -187,8 +187,7 @@ wp_reset_postdata();
                         $args = array(
                             'post_type' => 'Drones',
                             'posts_per_page' => -1,
-                            'orderby' => 'date',
-                            'order' => 'ASC'
+                            
                         );
                         $query = new WP_Query($args);
                         if ($query->have_posts()) : 

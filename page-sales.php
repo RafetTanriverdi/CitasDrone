@@ -44,15 +44,20 @@ if ($query->have_posts()) :
                     <div class="col-lg-8">
                         <h1><?php the_title(); ?> </h1>
                         <p><?php echo get_field("drone-text-1")?></p>
-                        <p><?php echo get_field("drone-text-2")?></p>
-                        <p><?php echo get_field("drone-text-3")?></p>
-                        <p><?php echo get_field("drone-advantage-list-title")?></p>
+                        <p><b><?php echo get_field("drone-advantage-list-title")?></b></p>
                         <ul>
                             <li><?php echo get_field("drone-list-item-1")?></li>
                             <li><?php echo get_field("drone-list-item-2")?></li>
                             <li><?php echo get_field("drone-list-item-3")?></li>
-                            <li><?php echo get_field("drone-list-item-4")?>.</li>
+                            <li><?php echo get_field("drone-list-item-4")?></li>
+                            <li><?php echo get_field("drone-list-item-5")?></li>
+                            <li><?php echo get_field("drone-list-item-6")?></li>
+                            <li><?php echo get_field("drone-list-item-7")?></li>
+                            <li><?php echo get_field("drone-list-item-8")?></li>
+                            <li><?php echo get_field("drone-list-item-9")?></li>
+                            <li><?php echo get_field("drone-list-item-10")?></li>
                         </ul>
+                        <p><?php echo get_field("drone-text-2")?></p>
                     </div>
                     <div class="col-lg-4">
                         <div id="myCarousel" class="image-container" >
@@ -67,23 +72,23 @@ if ($query->have_posts()) :
     <div class="container">
         <div class="row d-flex justify-content-center align-center py-4">
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-activity fs-1"></i>
+                <i class="bi bi-speedometer2 fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-1")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-battery-charging fs-1"></i>
+                <i class="bi bi-droplet fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-2")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-bar-chart fs-1"></i>
+                <i class="bi bi-battery-charging fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-3")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-flower1 fs-1"></i>
+                <i class="bi bi-clock-history fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-4")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-graph-up-arrow fs-1"></i>
+                <i class="bi bi-box fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-5")?></p>
             </div>
 
@@ -110,15 +115,20 @@ if ($query->have_posts()) :
                     <div class="col-lg-8">
                         <h1><?php the_title(); ?></h1>
                         <p><?php echo get_field("drone-text-1")?></p>
-                        <p><?php echo get_field("drone-text-2")?></p>
-                        <p><?php echo get_field("drone-text-3")?></p>
-                        <p><?php echo get_field("drone-advantage-list-title")?></p>
+                        <p><b><?php echo get_field("drone-advantage-list-title")?></b></p>
                         <ul>
                             <li><?php echo get_field("drone-list-item-1")?></li>
                             <li><?php echo get_field("drone-list-item-2")?></li>
                             <li><?php echo get_field("drone-list-item-3")?></li>
-                            <li><?php echo get_field("drone-list-item-4")?>.</li>
+                            <li><?php echo get_field("drone-list-item-4")?></li>
+                            <li><?php echo get_field("drone-list-item-5")?></li>
+                            <li><?php echo get_field("drone-list-item-6")?></li>
+                            <li><?php echo get_field("drone-list-item-7")?></li>
+                            <li><?php echo get_field("drone-list-item-8")?></li>
+                            <li><?php echo get_field("drone-list-item-9")?></li>
+                            <li><?php echo get_field("drone-list-item-10")?></li>
                         </ul>
+                        <p><?php echo get_field("drone-text-2")?></p>
                     </div>
                   
                 </div>
@@ -127,27 +137,26 @@ if ($query->have_posts()) :
         <div class="container-fluid bg-dark element">
     <div class="container">
         <div class="row d-flex justify-content-center align-center py-4">
-            <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-activity fs-1"></i>
+        <div class="col-sm-2 text-center text-white ">
+                <i class="bi bi-speedometer2 fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-1")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-battery-charging fs-1"></i>
+                <i class="bi bi-droplet fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-2")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-bar-chart fs-1"></i>
+                <i class="bi bi-battery-charging fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-3")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-flower1 fs-1"></i>
+                <i class="bi bi-clock-history fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-4")?></p>
             </div>
             <div class="col-sm-2 text-center text-white ">
-                <i class="bi bi-graph-up-arrow fs-1"></i>
+                <i class="bi bi-box fs-1"></i>
                 <p class="fs-6"><?php echo get_field("drone-black-feature-5")?></p>
             </div>
-
         </div>
 
     </div>

@@ -16,38 +16,39 @@ get_header(); ?>
 
     <!--contact-section-->
     <div class='contact-main-one'>
-        <div class="container section-five-main py-5 ">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2><?php echo get_field("contact-left-title")?></h2>
-                    
-                    <h4><?php echo get_field("contact-left-subtitle-1")?></h4>
-                    <p><?php echo get_field("contact-left-text-1")?></p>
-                    
-                    <h4><?php echo get_field("contact-left-subtitle-2")?></h4>
-                    <p><?php echo get_field("contact-left-text-2")?></p>
-                    
-                    <h4><?php echo get_field("contact-left-socialmedia-title")?></h4>
-                    <div class="icon">
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-youtube"></i>
-                        <i class="bi bi-whatsapp"></i>
-                    </div>
-                </div>
-                
-                
-                <div class=" col-md-4 me-0 pe-0">
-                    <iframe
+        
+<div class="container section-five-main my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2><?php echo get_field("contact-left-title")?></h2>
+
+            <h4><?php echo get_field("contact-left-subtitle-1")?></h4>
+            <p><?php echo get_field("contact-left-text-1")?></p>
+
+            <h4><?php echo get_field("contact-left-subtitle-2")?></h4>
+            <p><?php echo get_field("contact-left-text-2")?></p>
+
+            <h4><?php echo get_field("contact-left-socialmedia-title")?></h4>
+            <div class="icon">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </div>
+
+     
+            <div class=" col-md-4 me-0 pe-0  map-container">
+                <iframe
                     class='map'
                     src="<?php echo get_field("company-localtion-url")?>"
                     width="420" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-                <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0">
-                    <div class="p-5" >    
+            </div>
+
+            <div class="bg-dark align-center form-main  col-md-4 ms-0 ps-0 form-container ">
+                <div class="p-5" >    
                     <div>
-                        
+
                         <h2 class="text-white"><?php echo get_field("contact-form-title")?></h2>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-name-username")?></label>
@@ -55,24 +56,25 @@ get_header(); ?>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label text-white"><?php echo get_field("contact-form-email")?></label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                            >
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label text-white"><?php echo get_field("contact-form-massage")?></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                       >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-white"><?php echo get_field("contact-form-massage")?></label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="mb-3">
                             <Button class="btn btn-success">
-                                <?php echo get_field("contact-form-submit-button")?>
+                            <?php echo get_field("contact-form-submit-button")?>
                             </Button>
                         </div>
                     </div>
                 </div>
                 
             </div>
-        </div>
     </div>
+</div>
+
 </div>
 <!--faq -->
 <div class="container mb-5">

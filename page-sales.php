@@ -63,7 +63,6 @@ if ($query->have_posts()) :
                         <div id="myCarousel" class="image-container" >
                     
                     <img src="<?php echo get_field("drone-image")?>" ></div>
-                        <p class="text-center my-2"><?php the_title(); ?></p>
                     </div>
                 </div>
             </div>
@@ -110,7 +109,6 @@ if ($query->have_posts()) :
                     
                     <img src="<?php echo get_field("drone-image")?>" ></div>
                      
-                        <p class="text-center my-2"><?php the_title(); ?></p>
                     </div>
                     <div class="col-lg-8">
                         <h1><?php the_title(); ?></h1>
